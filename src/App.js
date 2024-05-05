@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
+// =============================================================================
+// Estado inicial
+// =============================================================================
 const initialToDoList = [
   { id: 1, status: false, title: 'Mi Primera Tarea' },
   { id: 2, status: false, title: 'Mi Segunda Tarea' },
@@ -14,6 +17,7 @@ const initialToDoList = [
   { id: 4, status: true, title: 'Tarea finalizada' },
   { id: 5, status: false, title: 'Tarea por finalizar' },
 ];
+// =============================================================================
 
 function App() {
 
