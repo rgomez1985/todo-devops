@@ -15,12 +15,14 @@ describe('App', () => {
 
   it('Renderiza el título', () => {
     render(<App />);
+
     const titleElement = screen.getByTestId('title');
     expect(titleElement.textContent).toBe('App for manage To Do list');
   });
 
   it('Que contenga la tarea "Mi Primera Tarea"', () => {
     render(<App />);
+
     const listItemElement = screen.getByText('Mi Primera Tarea');
     expect(listItemElement).toBeDefined();
   });
