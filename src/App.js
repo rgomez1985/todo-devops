@@ -32,7 +32,7 @@ function App() {
   ///////////////////////////
   const addTask = () => {
     if(newTask) {
-      let num = toDo.length + 1; 
+      let num = toDo.length + 1;
       let newEntry = { id: num, title: newTask, status: false }
       setToDo([...toDo, newEntry])
       setNewTask('');
@@ -88,7 +88,7 @@ function App() {
     <div className="container App">
 
     <br /><br />
-    <h2>To Do List App (ReactJS)</h2>
+    <h2 data-testid='title'>App for manage To Do list</h2>
     <br /><br />
 
     {updateData && updateData ? (
